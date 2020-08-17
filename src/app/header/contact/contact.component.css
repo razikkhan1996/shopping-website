@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+    background-color: #eee;
+    font-family: 'Merriweather', serif
+}
+
+.btn-lg {
+    margin-top: 200px
+}
+
+button.close {
+    padding: 10px
+}
+
+.close span {
+    font-weight: 100;
+    font-size: 30px
+}
+
+img {
+    padding-bottom: 20px
+}
+
+.modal-header {
+    border: none;
+    outline: 0
+}
+
+.btn-dark {
+    border-radius: 6px;
+    background: #000 !important
+}
+
+.btn-dark:focus {
+    box-shadow: none
+}
+
+.close:focus {
+    outline: none !important
+}
+
+.modal-content {
+    border: none;
+    border-radius: 7px
+}
+
+.form-group {
+    margin-bottom: 50px
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid #dae0e5;
+    padding-left: 0px
+}
+
+.form-control::placeholder {
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-size: 90%
+}
+
+.form-control:focus {
+    color: #000 !important;
+    border-color: #fff;
+    border-bottom: 1.5px solid #000;
+    box-shadow: none;
+    opacity: 1;
+    letter-spacing: 1px
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #000 !important;
+    opacity: 2;
+    font-size: 90%
+}

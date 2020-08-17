@@ -1,0 +1,68 @@
+
+<h1 class="text-center">BUY PRODUCTS</h1>
+        <div class="alert alert-light border d-flex align-items-center" *ngIf="addproduct" role="alert">
+            <strong class="text-success">{{addproduct}}</strong>&nbsp;is selected and added in your cart.
+
+            <button type="button" class="btn btn-success ml-auto" data-toggle="modal" data-target="#exampleModal" routerLink="checkout">
+                Checkout
+            </button>
+        </div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">laptop</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" (click)="selectitem('laptop')">select</button>
+            </div>
+          </div>
+        
+    </div>
+
+    <br>
+    
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">television</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" (click)="selectitem('television')">select</button>
+            </div>
+          </div>
+        
+    </div>
+
+    <div class="col-md-6">
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">mobile</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" (click)="selectitem('Mobile')">select</button>
+            </div>
+          </div>
+        
+    </div>
+
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary"(click)="selectitem('Washing machine')">select</button>
+            </div>
+          </div>  
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="alert alert-warning text-center py-4" role="alert">
+            <h5 class="card-title" *ngIf="!selected">please select an item</h5>
+            <h5 class="card-title" *ngIf="selected">{{item}} is selected</h5>
+            <button class="btn btn-primary" (click)="cart('cartitem')">Add to Cart</button>
+          </div>
+    </div>
+</div>
